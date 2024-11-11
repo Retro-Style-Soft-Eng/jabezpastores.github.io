@@ -19,14 +19,14 @@ body {
     flex-direction: column;
     width: 580px;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.9); /* Light background */
+    background: rgba(255, 255, 255, 0.9); 
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .login-header {
     text-align: center;
-    margin: 20px 0 30px; /* Consistent spacing */
+    margin: 20px 0 30px; 
 }
 
 .login-header header {
@@ -40,7 +40,7 @@ body {
     height: 60px;
     font-size: 17px;
     padding: 0 25px;
-    margin-bottom: 15px; /* Keep consistent spacing */
+    margin-bottom: 15px; 
     border-radius: 30px;
     border: none;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -54,14 +54,14 @@ body {
 }
 
 .input-field:focus {
-    width: 100%; /* Keep the same width when focused */
+    width: 100%; 
 }
 
 .forgot {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px; /* Consistent spacing */
+    margin-bottom: 30px;
 }
 
 a {
@@ -78,20 +78,20 @@ a:hover {
 }
 
 .submit-btn {
-    width: 45%; /* Set width to 80% */
+    width: 45%;
     height: 60px;
     background: #222;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: .3s;
-    margin: 0 auto; /* Center the button horizontally */
-    display: block; /* Ensure it behaves like a block element */
+    margin: 0 auto;
+    display: block; 
 }
 
 .input-submit label {
     position: absolute;
-    top: 50%; /* Center the label vertically */
+    top: 50%; 
     left: 50%;
     color: #fff;
     transform: translate(-50%, -50%);
@@ -123,12 +123,12 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 45%; 
-    height: 60px; /* Fixed height for Google button */
+    height: 60px; 
     background: #fff; 
     border: 2px solid #ccc; 
     border-radius: 30px;
     cursor: pointer; 
-    margin: 10px auto; /* Center the button */
+    margin: 10px auto; 
     transition: background 0.3s, transform 0.3s; 
 }
 
@@ -144,6 +144,6 @@ a:hover {
 .terms {
     text-align: center;
     font-size: 14px;
-    margin-top: 25px; /* Spacing above the terms text */
+    margin-top: 25px; 
     margin-bottom: 5x;
 }
