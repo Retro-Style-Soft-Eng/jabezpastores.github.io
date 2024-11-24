@@ -9,6 +9,6 @@ cd thesis-app
 npm start
 ```
 
-Ignore the vulnerabilities in 'npm' for the timebeing, they may break the app.
+Make sure your account SSH key is set up to be able to use git push/pull.
 
-Don't forget to commit to 'main' specifically, not 'master'.
+Ignore the vulnerabilities in `npm` for the timebeing, they may break the app.
