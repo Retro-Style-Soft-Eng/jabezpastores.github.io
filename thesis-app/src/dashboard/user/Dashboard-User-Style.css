@@ -9,7 +9,7 @@ body {
     background-color: #E8E8E8;
 }
 
-/* Navigation Bar*/
+/* Navigation Bar */
 .navbar {
     background-color: #fff;
     padding: 10px 20px;
@@ -126,61 +126,4 @@ body {
     width: 20px; 
     height: 20px; 
     pointer-events: none; 
-}
-
-/* Right Panel */
-.right-panel {
-    width: 13%;
-    background-color: #F1F1F1;
-    padding: 20px;
-    position: fixed;
-    top: 60px; 
-    right: 0;
-    bottom: 0;
-    margin-top: 10px; 
-}
-
-/* Recently Accessed */
-.right-panel h3 {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.right-panel ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.right-panel ul li {
-    margin-bottom: 5px;
-    font-size: 18px; 
-}
-
-.right-panel .show-more {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.right-panel .show-more:hover {
-    text-decoration: underline;
-}
-
-/* Quick Access */
-.quick-access {
-    margin-top: 20px; 
-}
-
-.quick-access h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.quick-access div {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-left: 0;
-    text-align: left;
 }
