@@ -1,6 +1,6 @@
 import React from 'react';
-import icon from './xdd.jpg'; 
-import './Dashboard-Student-Style.css'; 
+import icon from './img/xdd.jpg'; 
+import './css/Dashboard-Student-Style.css'; 
 
 const StudentLogin = ({logout}) => {
   

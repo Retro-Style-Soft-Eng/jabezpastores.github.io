@@ -1,6 +1,6 @@
 import React from 'react';
-import icon from "./xdd.jpg";
-import './Dashboard-Admin-Style.css';
+import icon from "./img/xdd.jpg";
+import './css/Dashboard-Admin-Style.css';
 //just ask chatgpt how this shit works i have no idea
 
 const AdminLogin = ({ logout }) => {

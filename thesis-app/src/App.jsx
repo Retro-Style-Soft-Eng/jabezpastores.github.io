@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from "./lib/helper/supabaseClient.js";
-import LoginPage from './login/Login.jsx';
 import Login from './login/Login.jsx';
 import AdminLogin from './login/AdminLogin.jsx';
 import StudentLogin from './login/StudentLogin.jsx';
@@ -70,16 +69,12 @@ export default function App() {
                 <div>
                   <AdminLogin logout={logout}/>
                 </div>
-              ) : role === "student" ? (
-                <div>
-                  <StudentLogin logout={logout}/>
-                </div>
-              ) : (
+              ) : ( // else it defaults to StudentLogin dashboard
                 <div>
                   <StudentLogin logout={logout}/>
                 </div>
               )
-            ) : (
+            ) : ( // yes it's redundant but it works. I don't know how to make it work otherwise
               <div>
                 <StudentLogin logout={logout}/>
               </div>

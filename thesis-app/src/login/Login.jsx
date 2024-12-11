@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { supabase } from "../lib/helper/supabaseClient.js";
-import "./Style.css";
-import lizBackground from "./liz.jpg";
-import asdIcon from "./asd.png";
+import "./css/Login.css";
+import lizBackground from "./img/liz.jpg";
+import asdIcon from "./img/asd.png";
 
 
 const Login = () => {
