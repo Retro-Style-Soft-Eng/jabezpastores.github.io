@@ -76,8 +76,7 @@ export default function App() {
                 </div>
               ) : (
                 <div>
-                  <p>Your role: {role}</p>
-                  <button onClick={logout}>Logout</button>
+                  <StudentLogin logout={logout}/>
                 </div>
               )
             ) : (
