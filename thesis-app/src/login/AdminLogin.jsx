@@ -12,7 +12,7 @@ const AdminLogin = ({ logout }) => {
           <img src={icon} alt="Logo" className="logo" />
           <ul className="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#" className="active">Dashboard, You're a ADMIN/LIBRARIAN!</a></li>
+            <li><a href="#" className="active">Dashboard, You're a ADMIN!</a></li>
             <li><a href="#">Submissions</a></li>
             <li><a href="#">References</a></li>
             <li><a href="#">Archives</a></li>
