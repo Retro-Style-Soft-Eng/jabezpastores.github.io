@@ -51,18 +51,21 @@ const Upload = () => {
         <h2>Files in Your Bucket</h2>
         <ul>
           {files.length > 0 ? (
-            files.map((file, index) => (
-              <li key={index}>
-                {/* Generate a public URL to the file */}
-                <a
-                  href={supabase.storage.from('pdf/files').getPublicUrl(file.name).publicURL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {file.name}
-                </a>
-              </li>
-            ))
+            files.map((file, index) => {
+              const publicUrl = supabase.storage.from('pdf').getPublicUrl(file.name).publicURL;
+
+              return (
+                <li key={index}>
+                  <a href={publicUrl} target="_blank" rel="noopener noreferrer">
+                    View {file.name}
+                  </a>
+                  {' | '}
+                  <a href={publicUrl} download>
+                    Download
+                  </a>
+                </li>
+              );
+            })
           ) : (
             <p>No files found.</p>
           )}
