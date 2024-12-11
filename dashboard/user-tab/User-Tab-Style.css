@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E8E8E8;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 10; 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 60px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal; 
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.profile-icon img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.down-button {
+    background: none;
+    border: none;
+    padding: 0;
+    display: inline-block;
+    line-height: 0; 
+    cursor: pointer;
+}
+
+.down-button img {
+    width: 16px;  
+    height: 16px;
+}
+
+.down-button:hover img {
+    opacity: 0.8; 
+}
+
+.bell-icon {
+    width: 15px; 
+    height: 15px; 
+    cursor: pointer; 
+}
+
+/* Table */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 80%; 
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.data-table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+    table-layout: fixed; 
+}
+
+.data-table th, .data-table td {
+    padding: 25px;
+    text-align: center;
+    border: 1px solid black;
+    word-wrap: break-word; 
+    overflow: hidden; 
+}
+
+.data-table th {
+    background-color: gray;
+    color: white;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: white;
+}
+
+.data-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Buttons */
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+    margin-right: 0;  
+    width: 90%; 
+    position: relative; 
+}
+
+.action-button {
+    background-color: white;
+    padding: 15px 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;  
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center; 
+}
