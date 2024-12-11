@@ -70,7 +70,7 @@ const Login = () => {
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
               />
-              <label htmlFor="check">Remember me</label>
+              <label htmlFor="check" className="text">Remember me</label>
             </section>
             <section>
               <a href="#">Forgot password?</a>

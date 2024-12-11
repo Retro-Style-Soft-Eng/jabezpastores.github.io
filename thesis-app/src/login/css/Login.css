@@ -50,7 +50,7 @@ body {
 
 ::placeholder {
     font-weight: 500;
-    color: #222;
+    color: #fdfdfd;
 }
 
 .input-field:focus {
@@ -124,7 +124,7 @@ a:hover {
     justify-content: center;
     width: 45%; 
     height: 60px; 
-    background: #fff; 
+    background: #222; 
     border: 2px solid #ccc; 
     border-radius: 30px;
     cursor: pointer; 
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .google-signin:hover {
-    background: #f5f5f5; 
+    background: #000000; 
     transform: scale(1.05); 
 }
 
@@ -146,4 +146,9 @@ a:hover {
     font-size: 14px;
     margin-top: 25px; 
     margin-bottom: 5x;
+    color:#222
+}
+
+.text{
+    color:#222;
 }
