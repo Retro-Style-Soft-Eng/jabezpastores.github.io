@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { supabase } from "../lib/helper/supabaseClient.js";
-import "./Style.css";
+import "./css/Login.css";
 import libBackground from "../Image/Wallpaper.jpg";
 import google from "../Image/Google.png";
 
@@ -8,7 +8,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-
   const loginGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: "google",
