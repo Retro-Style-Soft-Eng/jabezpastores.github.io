@@ -4,6 +4,10 @@ import Login from './login/Login.jsx';
 import AdminLogin from './login/AdminLogin.jsx';
 import StudentLogin from './login/StudentLogin.jsx';
 import LibrarianLogin from './login/LibrarianLogin.jsx';
+import { Link, Route, Routes, Outlet } from 'react-router-dom';
+import Dashboard from './login/Dashboard.jsx';
+import Upload from './login/Upload.jsx';
+import neu from './Image/NEU.png';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -87,7 +91,41 @@ export default function App() {
         return <AdminLogin logout={logout} />
       }
       if(role == "librarian"){
-        return <LibrarianLogin logout={logout}/>
+        return(
+          <><div>
+            {/* Navigation Bar */}
+            <nav className="navbar">
+              <div className="nav-left">
+                <img src={neu} alt="Logo" className="logo" />
+                <ul className="nav-links">
+                  <li><Link to='/'>Home</Link></li>
+                  <li><Link to="/dashboard">Dashboard</Link></li>
+                  <li><a href="#">Users</a></li>
+                  <li><a href="/upload">Theses</a></li>
+                  <li><a href="#">Reports</a></li>
+                </ul>
+              </div>
+              <div className="nav-right">
+                <div className="notification-icon">
+                  <img src={neu} alt="Bell Icon" className="bell-icon" />
+                </div>
+                <div className="profile-icon">
+                  <img src={neu} alt="User Icon" />
+                  <button className="down-button">
+                    <img src={neu} alt="Down Arrow" />
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <Routes>
+            <Route path='/' element={<LibrarianLogin logout={logout} />} />
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/upload' element={<Upload />} />
+          </Routes>
+        </>  
+        )
+        
       }
       if(role == "student"){
         return <StudentLogin logout={logout} />
@@ -99,4 +137,5 @@ export default function App() {
       return <StudentLogin logout={logout} />
     }
   }
+  
 }

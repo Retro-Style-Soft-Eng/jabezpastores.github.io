@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { supabase } from '../lib/helper/supabaseClient.js';
-import neu from '../Image/NEU.png';
-import './css/Dashboard-Libriarian-Style.css';
+import './css/Dashboard-Libriarian-Style.css'; // Assuming the CSS file is in the same directory
+
 
 const LibrarianLogin = ({ logout }) => {
   const [uploading, setUploading] = useState(false);
@@ -37,51 +37,22 @@ const LibrarianLogin = ({ logout }) => {
   };
 
   return (
-    <div>
-      {/* Navigation Bar */}
-      <nav className="navbar">
-        <div className="nav-left">
-          <img src={neu} alt="Logo" className="logo" />
-          <ul className="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#" className="active">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Theses</a></li>
-            <li><a href="#">Reports</a></li>
-          </ul>
+
+      <div>
+        
+        {/*Home */}
+        <div className="text-container">
+          <h1>Welcome, Librarian</h1>
         </div>
-        <div className="nav-right">
-          <div className="notification-icon">
-            <img src={neu} alt="Bell Icon" className="bell-icon" />
-          </div>
-          <div className="profile-icon">
-            <img src={neu} alt="User Icon" />
-            <button className="down-button">
-              <img src={neu} alt="Down Arrow" />
-            </button>
-          </div>
+
+        {/* Logout Button */}
+        <div className="dashboard-container">
+          <button onClick={logout} className="logout-button">Logout</button>
         </div>
-      </nav>
 
-      {/* Dashboard */}
-      <div className="text-container">
-        <h1>Welcome, Librarian</h1>
-      </div>
 
-      {/* Upload Section */}
-      <div className="upload-container">
-        <h2>Upload PDF</h2>
-        <input type="file" accept="application/pdf" onChange={handleFileUpload} disabled={uploading} />
-        {uploading && <p>Uploading file...</p>}
-        {uploadError && <p className="error">{uploadError}</p>}
-        {fileName && <p>Uploaded: {fileName}</p>}
       </div>
-
-      {/* Logout Button */}
-      <div className="dashboard-container">
-        <button onClick={logout} className="logout-button">Logout</button>
-      </div>
-    </div>
+      
   );
 };
 
