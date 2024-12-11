@@ -101,7 +101,7 @@ export default function App() {
                   <li><Link to='/'>Home</Link></li>
                   <li><Link to="/dashboard">Dashboard</Link></li>
                   <li><a href="#">Users</a></li>
-                  <li><a href="/upload">Theses</a></li>
+                  <li><Link to="/upload">Theses</Link></li>
                   <li><a href="#">Reports</a></li>
                 </ul>
               </div>
