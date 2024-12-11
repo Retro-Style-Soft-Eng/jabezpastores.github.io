@@ -81,7 +81,7 @@ export default function App() {
               )
             ) : (
               <div>
-                <p>Loading role...</p>
+                <StudentLogin logout={logout}/>
               </div>
             )}
           </div>
