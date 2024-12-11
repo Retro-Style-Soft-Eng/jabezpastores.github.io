@@ -3,6 +3,7 @@ import { supabase } from "./lib/helper/supabaseClient.js";
 import Login from './login/Login.jsx';
 import AdminLogin from './login/AdminLogin.jsx';
 import StudentLogin from './login/StudentLogin.jsx';
+import LibrarianLogin from './login/LibrarianLogin.jsx';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -86,7 +87,7 @@ export default function App() {
         return <AdminLogin logout={logout} />
       }
       if(role == "librarian"){
-        //insert librarian dashboard here
+        return <LibrarianLogin logout={logout}/>
       }
       if(role == "student"){
         return <StudentLogin logout={logout} />
