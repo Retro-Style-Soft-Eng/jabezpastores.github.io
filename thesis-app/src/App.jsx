@@ -93,9 +93,10 @@ export default function App() {
         return <StudentLogin logout={logout} />
       }
       // IF NO ROLE ASSIGNED THRU SQL it defaults to the student dashboard
-      if(!role){
-        return <StudentLogin logout={logout} />
-      }
+      
+    }
+    if(!role){
+      return <StudentLogin logout={logout} />
     }
   }
 }
