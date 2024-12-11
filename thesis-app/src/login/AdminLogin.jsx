@@ -1,7 +1,7 @@
 import React from 'react';
 import icon from "./img/xdd.jpg";
 import './css/Dashboard-Admin-Style.css';
-//just ask chatgpt how this shit works i have no idea
+//just ask chatgpt how the frontend works i have no idea
 
 const AdminLogin = ({ logout }) => {
   return (

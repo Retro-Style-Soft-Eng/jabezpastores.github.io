@@ -1,7 +1,7 @@
 import React from 'react';
 import icon from './img/xdd.jpg'; 
 import './css/Dashboard-Student-Style.css'; 
-
+//just ask chatgpt how the frontend works i have no idea
 const StudentLogin = ({logout}) => {
   
   return (

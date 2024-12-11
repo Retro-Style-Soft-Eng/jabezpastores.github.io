@@ -3,27 +3,26 @@ import { supabase } from "../lib/helper/supabaseClient.js";
 import "./css/Login.css";
 import lizBackground from "./img/liz.jpg";
 import asdIcon from "./img/asd.png";
-
+//just ask chatgpt how the frontend works i have no idea
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-
   const loginGoogle = async () => {
-    await supabase.auth.signInWithOAuth({
+    const { user } = await supabase.auth.signInWithOAuth({
         provider: "google",
     }); 
   };
 
   const loginEmail = async (e) => {
-    e.preventDefault(); // pls fill out field potaena naman oh
+    e.preventDefault(); // pls fill out field 
     const { user, session, error } = await supabase.auth.signInWithPassword({
         email,
         password,
     });
   };
-  // I have no fucking idea how this shit below works. I just asked chatgpt to make it so
+  // I have no idea how this stuff below works. I just asked chatgpt to make it so
   // uhhhhh basically hey make this html file into a jsx file ok poke?
   return (
     <div
