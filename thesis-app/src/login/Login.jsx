@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { supabase } from "../lib/helper/supabaseClient.js";
-import "./Style.css";
+import "./css/Login.css";
 import libBackground from "../Image/Wallpaper.jpg";
 import google from "../Image/Google.png";
 

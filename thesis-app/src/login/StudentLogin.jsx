@@ -1,6 +1,5 @@
 import React from 'react';
-import icon from './xdd.jpg'; 
-import './Dashboard-Student-Style.css'; 
+import './css/Dashboard-Student-Style.css'; 
 import neu from '../Image/NEU.png';
 import user from '../Image/User.png';
 import bell from '../Image/Bell.png';
