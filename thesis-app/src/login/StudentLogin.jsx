@@ -1,6 +1,11 @@
 import React from 'react';
 import icon from './xdd.jpg'; 
 import './Dashboard-Student-Style.css'; 
+import neu from '../Image/NEU.png';
+import user from '../Image/User.png';
+import bell from '../Image/Bell.png';
+import searchicon from '../Image/SearchIcon.png';
+import downbutton from '../Image/DownButton.png';
 
 const StudentLogin = ({logout}) => {
   
@@ -9,7 +14,7 @@ const StudentLogin = ({logout}) => {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="nav-left">
-          <img src={icon} alt="Logo" className="logo" />
+          <img src={neu} alt="Logo" className="logo" />
           <ul className="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#" className="active">Dashboard, You're a STUDENT!</a></li>
@@ -20,12 +25,12 @@ const StudentLogin = ({logout}) => {
         </div>
         <div className="nav-right">
           <div className="notification-icon">
-            <img src={icon} alt="Bell Icon" className="bell-icon" />
+            <img src={bell} alt="Bell Icon" className="bell-icon" />
           </div>
           <div className="profile-icon">
-            <img src={icon} alt="User Icon" />
+            <img src={user} alt="User Icon" />
             <button className="down-button">
-              <img src={icon} alt="Down Arrow" />
+              <img src={downbutton} alt="Down Arrow" />
             </button>
           </div>
         </div>
@@ -35,7 +40,7 @@ const StudentLogin = ({logout}) => {
       <div className="dashboard-container">
         <h1>Dashboard</h1>
         <div className="search-bar">
-          <img src={icon} alt="Search Icon" className="search-icon" />
+          <img src={searchicon} alt="Search Icon" className="search-icon" />
           <input type="text" placeholder="Search" />
         </div>
         {/* Logout Button */}
