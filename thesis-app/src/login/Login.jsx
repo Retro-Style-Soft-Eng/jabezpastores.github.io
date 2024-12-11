@@ -7,7 +7,7 @@ import google from "../Image/Google.png";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+  
   const loginGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: "google",
@@ -63,15 +63,6 @@ const Login = () => {
             />
           </div>
           <div className="forgot">
-            <section className="checkbox-section">
-              <input
-                type="checkbox"
-                id="check"
-                checked={rememberMe}
-                onChange={(e) => setRememberMe(e.target.checked)}
-              />
-              <label htmlFor="check" className="text">Remember me</label>
-            </section>
             <section>
               <a href="#">Forgot password?</a>
             </section>
