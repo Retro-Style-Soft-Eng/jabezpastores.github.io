@@ -18,7 +18,7 @@ const AdminLogin = ({ logout }) => {
 
     try {
       // Upload file to the "pdf" bucket
-      const { data, error } = await supabase.storage.from('pdf').upload(`files/${file.name}`, file, {
+      const { data, error } = await supabase.storage.from('pdf').upload(`${file.name}`, file, {
         cacheControl: '3600',
         upsert: false, // Avoid overwriting existing files
       });
